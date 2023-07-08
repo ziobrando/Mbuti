@@ -1,2 +1,6 @@
-package it.avanscoperta.mbuti.domain;public class TrafficStream {
+package it.avanscoperta.mbuti.domain;
+
+public record TrafficStream(VisitorsPerPeriod visitorsPerPeriod) {
+
+
 }
