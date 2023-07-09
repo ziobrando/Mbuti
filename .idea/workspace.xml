@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dd38a0b-b358-409b-9274-63117d9581e1" name="Changes" comment="" />
+    <list default="true" id="3dd38a0b-b358-409b-9274-63117d9581e1" name="Changes" comment="Initial commit, just exploring.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/TrafficStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mbuti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mbuti.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Pipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Pipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/TrafficStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/TrafficStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/LandingPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/PipelineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/PipelineTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2S96NRPhnNkRWzEO0FmlW9Jd8mO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -17,9 +51,87 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "/Users/albertobrandolini/Git/Mbuti/src/main/java/it/avanscoperta/mbuti/domain",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="it.avanscoperta.mbuti.domain" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="it.avanscoperta.mbuti.domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TrafficStreamTest.can_derive_visitors_per_day">
+    <configuration name="All in Mbuti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mbuti" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandingPageTest.can_add_an_incoming_traffic_stream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mbuti" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.avanscoperta.mbuti.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.avanscoperta.mbuti.domain" />
+      <option name="MAIN_CLASS_NAME" value="it.avanscoperta.mbuti.domain.LandingPageTest" />
+      <option name="METHOD_NAME" value="can_add_an_incoming_traffic_stream" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrafficStreamTest.can_derive_visitors_per_day" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mbuti" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.avanscoperta.mbuti.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.avanscoperta.mbuti.domain" />
+      <option name="MAIN_CLASS_NAME" value="it.avanscoperta.mbuti.domain.TrafficStreamTest" />
+      <option name="METHOD_NAME" value="can_derive_visitors_per_day" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="it.avanscoperta.mbuti.domain in Mbuti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mbuti" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.avanscoperta.mbuti.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.avanscoperta.mbuti.domain" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TrafficStreamTest.can_derive_visitors_per_day" />
+        <item itemvalue="JUnit.All in Mbuti" />
+        <item itemvalue="JUnit.it.avanscoperta.mbuti.domain in Mbuti" />
+        <item itemvalue="JUnit.LandingPageTest.can_add_an_incoming_traffic_stream" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -28,8 +140,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688546412530</updated>
+      <workItem from="1688546414067" duration="9854000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit, just exploring.">
+      <created>1688844751375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688844751375</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -41,5 +165,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit, just exploring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit, just exploring." />
   </component>
 </project>

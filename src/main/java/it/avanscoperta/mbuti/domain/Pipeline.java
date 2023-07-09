@@ -38,4 +38,8 @@ public class Pipeline {
     public String getResults() {
         return results;
     }
+
+    public void addNode(Node node) {
+        connectedNodes.put(node, node.inputStreams().stream().toList());
+    }
 }

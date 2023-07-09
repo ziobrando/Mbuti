@@ -15,7 +15,7 @@ public class LandingPageTest {
 
 
     private URL url;
-    private LandingPage landingPage;
+    private Page landingPage;
 
     @BeforeEach
     void setUp() throws MalformedURLException {
@@ -25,7 +25,7 @@ public class LandingPageTest {
     @Test
     void can_create_a_landing_page() {
         String label = "Test Landing Page";
-        landingPage = new LandingPage(
+        landingPage = new Page(
                 label, url
         );
 
@@ -36,14 +36,13 @@ public class LandingPageTest {
     void can_add_an_incoming_traffic_stream() {
         TrafficStream trafficStream = new TrafficStream(new VisitorsPerPeriod(200, Duration.of(1, ChronoUnit.DAYS)));
         String label = "Test Landing Page";
-        landingPage = new LandingPage(
+        landingPage = new Page(
                 label, url
         );
 
         landingPage.addIncomingTrafficStream("Organic", trafficStream);
 
-        assertTrue(landingPage.incomingTrafficStreams().contains(trafficStream));
-
+        assertTrue(landingPage.inputStreams().contains(trafficStream));
 
     }
 }
