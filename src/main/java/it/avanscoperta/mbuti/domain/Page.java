@@ -7,11 +7,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Page extends Node {
-    private final String label;
     private final URL url;
 
     Map<String, TrafficStream> incomingTrafficStreams = new HashMap<>();
-    Map<String, TrafficStream> outputTrafficStreams = new HashMap<>();
+    Map<String, TrafficLink> outputTrafficStreams = new HashMap<String, TrafficLink>();
 
     public Page(String label, URL url) {
         this.label = label;
@@ -20,12 +19,16 @@ public class Page extends Node {
 
     public void addIncomingTrafficStream(String label, TrafficStream trafficStream) {
         incomingTrafficStreams.put(label, trafficStream);
+    }
+
+    public void addOutput(Node destination, ConversionRate conversionRate) {
 
     }
 
-    @Override
-    public void tick(Duration duration, Pipeline pipeline) {
 
+    @Override
+    public void tick(int round, Duration duration, Pipeline pipeline, SimulationResult results) {
+        throw new RuntimeException("Not implemented yet");
     }
 
     @Override
@@ -36,6 +39,14 @@ public class Page extends Node {
     @Override
     public Collection<TrafficStream> inputStreams() {
         return incomingTrafficStreams.values();
+    }
+
+    @Override
+    public void addOutput(ConversionRate conversionRate, Node destination) {
+        this.outputTrafficStreams.put(
+                destination.getLabel(),
+                new TrafficLink(this, conversionRate, destination)
+        );
     }
 
     public Page withIncomingTraffic(String label, TrafficStream incomingTraffic) {

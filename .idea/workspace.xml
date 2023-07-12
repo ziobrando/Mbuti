@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dd38a0b-b358-409b-9274-63117d9581e1" name="Changes" comment="Initial commit, just exploring.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/TrafficStreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3dd38a0b-b358-409b-9274-63117d9581e1" name="Changes" comment="Playing with Tick Unit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/ConversionRate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/SimulationResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/TrafficLink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mbuti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mbuti.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Pipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/Pipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/TrafficStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/avanscoperta/mbuti/domain/TrafficStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/LandingPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/PipelineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/avanscoperta/mbuti/domain/PipelineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -68,7 +67,7 @@
       <recent name="it.avanscoperta.mbuti.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TrafficStreamTest.can_derive_visitors_per_day">
+  <component name="RunManager" selected="JUnit.it.avanscoperta.mbuti.domain in Mbuti">
     <configuration name="All in Mbuti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mbuti" />
       <option name="PACKAGE_NAME" value="" />
@@ -125,9 +124,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.it.avanscoperta.mbuti.domain in Mbuti" />
         <item itemvalue="JUnit.TrafficStreamTest.can_derive_visitors_per_day" />
         <item itemvalue="JUnit.All in Mbuti" />
-        <item itemvalue="JUnit.it.avanscoperta.mbuti.domain in Mbuti" />
         <item itemvalue="JUnit.LandingPageTest.can_add_an_incoming_traffic_stream" />
       </list>
     </recent_temporary>
@@ -140,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688546412530</updated>
-      <workItem from="1688546414067" duration="9854000" />
+      <workItem from="1688546414067" duration="22016000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit, just exploring.">
       <created>1688844751375</created>
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688844751375</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Playing with Tick Unit">
+      <created>1688892641090</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688892641090</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +174,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit, just exploring." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit, just exploring." />
+    <MESSAGE value="Playing with Tick Unit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Playing with Tick Unit" />
   </component>
 </project>

@@ -2,7 +2,6 @@ package it.avanscoperta.mbuti.domain;
 
 import java.time.Duration;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -11,8 +10,9 @@ import org.slf4j.LoggerFactory;
 public class Pipeline {
 
     final static Logger logger = LoggerFactory.getLogger(Pipeline.class);
-    String results = "";
-    Map<Node, List<TrafficStream>> connectedNodes = new HashMap<>();
+    SimulationResult results = new SimulationResult();
+    Map<String, Node> connectedNodes = new HashMap<>();
+
     public static Pipeline createEmpty() {
         return new Pipeline();
     }
@@ -20,26 +20,35 @@ public class Pipeline {
     public void runSimulation(int rounds, Duration roundDuration) {
         // for every destination... tick() letting the node pull visitors from the previous step.
         reset();
+        for (int round = 1; round <= rounds; round++) {
+            if(connectedNodes.isEmpty()) { results.append("Empty pipeline"); }
+            results.append("SIMULATION:");
+            int finalRound = round;
+            connectedNodes.values()
+                    .stream()
+                    .filter(Node::isTerminal)
+                    .forEach(
+                            (node) -> node.tick(finalRound, roundDuration, this, results)
+                    );
+        }
 
-        if(connectedNodes.isEmpty()) { results = "Empty pipeline"; }
-
-        connectedNodes.keySet()
-                .stream()
-                .filter(Node::isTerminal)
-                .forEach(
-                        (node) -> node.tick(roundDuration, this)
-                );
     }
 
     private void reset() {
-        this.results = "";
+        this.results = new SimulationResult();
     }
 
-    public String getResults() {
+    public SimulationResult getResults() {
         return results;
     }
 
     public void addNode(Node node) {
-        connectedNodes.put(node, node.inputStreams().stream().toList());
+        connectedNodes.put(node.getLabel(), node);
+    }
+
+    public void connect(Node origin, Node destination, ConversionRate conversionRate) {
+        Node node = connectedNodes.get(origin.getLabel());
+
+        node.addOutput(conversionRate, destination);
     }
 }
